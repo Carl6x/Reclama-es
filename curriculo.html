@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reclamações</title>
+    <style>
+     
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        
+        }
+
+        a {   text-decoration: none;
+                color: white;    
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            width: 100%;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        .form-container {
+            background-color: #fff;
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-decoration: none;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .form-group button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Reclamações</h1>
+    </header>
+
+    <div class="form-container">
+        <h2>Envie sua Reclamação</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Seu Nome</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Seu Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="complaint">Sua Reclamação</label>
+                <textarea id="complaint" name="complaint" placeholder="Descreva sua reclamação" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit"> <a href="error404.html">Enviar Reclamação</a></button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sistema de Reclamações. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
